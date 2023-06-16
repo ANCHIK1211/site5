@@ -70,15 +70,23 @@
                 <div class="rent__btns">
                     <ul class="rent__btns-list">
                         <li class="rent__btns-item">
-                            <button class="btn btn_theme_transparent active">Офисы (7)</button>
+                            <button class="btn btn_theme_transparent active rent__btn">Офисы (7)</button>
                         </li>
                         <li class="rent__btns-item">
-                            <button class="btn btn_theme_transparent">конференс-залы (2)</button>
+                            <button class="btn btn_theme_transparent rent__btn">конференс-залы (2)</button>
                         </li>
                         <li class="rent__btns-item">
-                            <button class="btn btn_theme_transparent">Торговые (0)</button>
+                            <button class="btn btn_theme_transparent rent__btn">Торговые (0)</button>
                         </li>
                     </ul>
+                    <div class="rent__select-wrap">
+                        <select name="plaza" id="plaza" class="rent__select">
+                            <option value="" disabled selected>вид площади</option>
+                            <option value="offices">Офисы (7)</option>
+                            <option value="conference">Конференс-залы (2)</option>
+                            <option value="commercial">Торговые (0)</option>
+                        </select>
+                    </div>
                 </div>
             </div>
             <div class="offers-slider">
@@ -165,27 +173,119 @@
                     <div class="slider-pagination offers-slider-pagination">
                         <ul class="slider-pagination__bullets offers-slider__pagination-bullets">
                             <li class="slider-pagination__bullet offers-slider__pagination-bullet">
-                                <a href="#!" class="pagination__link offers-slider__pagination-link"></a>
+                                <a href="#!" class="slider-pagination__link offers-slider__pagination-link"></a>
                             </li>
                             <li class="slider-pagination__bullet offers-slider__pagination-bullet">
-                                <a href="#!" class="pagination__link offers-slider__pagination-link"></a>
+                                <a href="#!" class="slider-pagination__link offers-slider__pagination-link"></a>
                             </li>
                             <li class="slider-pagination__bullet offers-slider__pagination-bullet">
-                                <a href="#!" class="pagination__link offers-slider__pagination-link"></a>
+                                <a href="#!" class="slider-pagination__link offers-slider__pagination-link"></a>
                             </li>
                             <li class="slider-pagination__bullet offers-slider__pagination-bullet">
-                                <a href="#!" class="pagination__link offers-slider__pagination-link"></a>
+                                <a href="#!" class="slider-pagination__link offers-slider__pagination-link"></a>
                             </li>
                             <li class="slider-pagination__bullet offers-slider__pagination-bullet">
-                                <a href="#!" class="pagination__link offers-slider__pagination-link"></a>
+                                <a href="#!" class="slider-pagination__link offers-slider__pagination-link"></a>
                             </li>
                             <li class="slider-pagination__bullet offers-slider__pagination-bullet">
-                                <a href="#!" class="pagination__link offers-slider__pagination-link"></a>
-                            </li>
+                                <a href="#!" class="slider-pagination__link offers-slider__pagination-link"></a>
+                            </li>   
                         </ul>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="services sectin">
+            <div class="container">
+                <div class="services__header">
+                    <h2 class="section__title services__title">Услуги компании</h2>
+                    <div class="logo services__logo">
+                        <img src="./img/Лого.svg" alt="Логотип" class="logo__img">
+                        <span class="logo__title">инфолайн</span>
+                    </div>
+                </div>
+                <ul class="services__list">
+                    <li class="service">
+                        <div class="service__icon">
+                            <img src="img/wifi.svg" alt="wifi">
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__title">Обслуживание офисной техники и интернет</h3>
+                            <ul class="service__list">
+                                <li class="service__item">Локальные сети и интернет</li>
+                                <li class="service__item">Контроль доступа</li>
+                                <li class="service__item">Обслуживание офисной техники</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <div class="service__icon">
+                            <img src="img/utilites.svg" alt="wifi">
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__title">Коммунальные услуги</h3>
+                            <ul class="service__list">
+                                <li class="service__item">Системы отопления и водоснабжения</li>
+                                <li class="service__item">Электрические системы</li>
+                                <li class="service__item">Ремонт и отделка помещений</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <div class="service__icon">
+                            <img src="img/Safety.svg" alt="wifi">
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__title">Охрана и безопастность</h3>
+                            <ul class="service__list">
+                                <li class="service__item">Видеонаблюдение</li>
+                                <li class="service__item">Охранная сигнализация</li>
+                                <li class="service__item">Пожарная сигнализация</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <div class="service__icon">
+                            <img src="img/teach.svg" alt="wifi">
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__title">Обучение сотрудников</h3>
+                            <ul class="service__list">
+                                <li class="service__item">Обучение сотрудников iT программам</li>
+                                <li class="service__item">Проф. переподготовка</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <div class="service__icon">
+                            <img src="img/account.svg" alt="wifi">
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__title">Бухгалтерия и юр. услуги</h3>
+                            <ul class="service__list">
+                                <li class="service__item">Бухгалтерия и финансовый учет</li>
+                                <li class="service__item">Юридическое сопровождение</li>
+                                <li class="service__item">Внедрение 1С</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <div class="service__icon">
+                            <img src="img/cleaning.svg" alt="wifi">
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__title">Клининг</h3>
+                            <ul class="service__list">
+                                <li class="service__item">Уборка дворовой части (снег, листья)</li>
+                                <li class="service__item">Вывоз мусора</li>
+                                <li class="service__item">Уборка помещений</li>
+                            </ul>
+                        </div>
+                    </li>
+
+            </div>
+        </section>
+
         </section>
         <section class="gallery">
             
