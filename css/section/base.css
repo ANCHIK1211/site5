@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-:root{
-    --container-width: 1260px;
-}
-
 /*
 font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
@@ -16,7 +12,7 @@ font-family: 'Roboto', sans-serif;
 
 html,
 body {
-    min-height: 100%;
+    height: 100%;
 }
 
 ul {
@@ -64,3 +60,38 @@ a {
     margin: 0px auto;
 }
 
+.btn {
+    border-radius: 5px;
+    font-family: 'Open Sans',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    min-width: 137px;
+}
+
+.btn_theme_blue {
+    background-color: #1E92E7;
+    color: #FFFFFF;
+}
+
+.btn_size_big{
+    padding: 14px 14px;
+}
+
+.btn_size_small{
+    padding: 9px 20px;
+}
+
+.btn_theme_transparent {
+    background-color: transparent;
+    border: 1px solid #1E92E7;
+    color: #000000;
+}
+
+.btn.active{
+    background-color: #1E92E7;
+    color: #FFFFFF;
+}
